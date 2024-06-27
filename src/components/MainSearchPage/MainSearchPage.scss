@@ -121,3 +121,9 @@ li a {
         padding: 9px 19px;
     }
 }
+
+.gemini-text {
+    background: -webkit-linear-gradient($gemini-blue, $gemini-purple, $gemini-pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

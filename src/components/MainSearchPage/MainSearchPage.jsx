@@ -53,6 +53,9 @@ const MainSearchPage = () => {
                 <button className="button" type="button">
                     I'm Feeling Lucky
                 </button>
+                <button className="button" type="button">
+                    <p className='gemini-text'>Gemini</p>
+                </button>
             </div>
         </div>
     );
