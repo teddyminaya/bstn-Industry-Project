@@ -1,0 +1,51 @@
+@use "variables" as *;
+@use "typography" as *;
+@use "resets" as *;
+
+header {
+    width: 100%;
+}
+
+body,
+*::placeholder,
+button {
+    font-family: "Product Sans", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+h3 {
+    font-size: 0.813rem;
+    line-height: 1.25rem;
+}
+
+h4 {
+    font-size: 0.6875rem;
+    line-height: 1rem;
+}
+
+p {
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6.25rem;
+    height: 2.25rem;
+}
+
+input[type=text],
+textarea {
+    height: 2.25rem;
+}
