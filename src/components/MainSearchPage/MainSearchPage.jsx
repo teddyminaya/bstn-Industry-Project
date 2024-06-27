@@ -31,31 +31,34 @@ const MainSearchPage = () => {
                 </ul>
             </header>
             <section className="search-container">
-            <div className="logo">
-                <img
-                    alt="Google"
-                    src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-                />
-            </div>
-            <div className="bar">
-                <input className="searchbar" type="text" title="Search" />
-                <a href="#">
+                <div className="logo">
                     <img
-                        className="voice"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png"
-                        alt="Search by Voice"
+                        alt="Google"
+                        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
                     />
-                </a>
-            </div>
-            <div className="buttons">
-                <button className="button" type="button">
-                    Google Search
-                </button>
-                <button className="button" type="button">
-                    I'm Feeling Lucky
-                </button>
-            </div>
-         </section>
+                </div>
+                <div className="bar">
+                    <input className="searchbar" type="text" title="Search" />
+                    <a href="#">
+                        <img
+                            className="voice"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png"
+                            alt="Search by Voice"
+                        />
+                    </a>
+                </div>
+                <div className="buttons">
+                    <button className="button" type="button">
+                        Google Search
+                    </button>
+                    <button className="button" type="button">
+                        I'm Feeling Lucky
+                    </button>
+                    <button className="button" type="button">
+                        <p className='gemini-text'>Gemini</p>
+                    </button>
+                </div>
+            </section>
         </div>
     );
 };

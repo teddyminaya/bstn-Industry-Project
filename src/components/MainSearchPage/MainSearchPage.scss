@@ -102,6 +102,8 @@ li a {
 }
 
 .buttons {
+    display: flex;
+    align-items: center;
     margin-top: 30px;
 }
 
@@ -113,6 +115,8 @@ li a {
     padding: 10px 20px;
     margin: 5px;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
     @include focus-outline;
 
     &:hover {
@@ -130,4 +134,10 @@ li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.gemini-text {
+    background: -webkit-linear-gradient($gemini-blue, $gemini-purple, $gemini-pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
