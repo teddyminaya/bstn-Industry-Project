@@ -1,12 +1,13 @@
 import React from "react";
-import AppGrid from "./components/AppGrid/AppGrid";
+import MainSearchPage from "./components/MainSearchPage/MainSearchPage";
+
 
 function App() {
 
 
   return (
     <>
-      <AppGrid />
+      <MainSearchPage />
     </>
   )
 }
