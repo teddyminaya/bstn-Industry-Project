@@ -30,6 +30,7 @@ const MainSearchPage = () => {
                     </li>
                 </ul>
             </header>
+            <section className="search-container">
             <div className="logo">
                 <img
                     alt="Google"
@@ -54,6 +55,7 @@ const MainSearchPage = () => {
                     I'm Feeling Lucky
                 </button>
             </div>
+         </section>
         </div>
     );
 };
