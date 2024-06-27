@@ -70,6 +70,9 @@ li a {
     width: 575px;
     border-radius: 30px;
     @include border-shadow;
+
+    display: flex;
+    align-items: center;
 }
 
 .bar:hover {
@@ -87,6 +90,8 @@ li a {
     width: 500px;
     font-size: 16px;
     @include focus-outline;
+
+    margin: 0 10px;
 }
 
 .voice {
@@ -97,6 +102,8 @@ li a {
 }
 
 .buttons {
+    display: flex;
+    align-items: center;
     margin-top: 30px;
 }
 
@@ -108,18 +115,25 @@ li a {
     padding: 10px 20px;
     margin: 5px;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
     @include focus-outline;
 
     &:hover {
         @include border-shadow;
-        padding: 9px 19px;
         color: #808080;
     }
 
     &:focus {
         @include border-shadow;
-        padding: 9px 19px;
     }
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .gemini-text {
