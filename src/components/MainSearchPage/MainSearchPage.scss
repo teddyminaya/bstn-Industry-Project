@@ -1,0 +1,123 @@
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+@mixin box-shadow {
+    box-shadow: 1px 1px 8px 1px $gray;
+}
+
+@mixin border-shadow {
+    border: 1px solid $gray;
+}
+
+@mixin focus-outline {
+    outline: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    color: $gray4;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.grid {
+    height: 23px;
+    position: relative;
+    bottom: 4px;
+}
+
+.signbutton {
+    background-color: $blue;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 10px;
+    position: relative;
+    bottom: 7px;
+    font-weight: bold;
+}
+
+.logo {
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+.bar {
+    margin: 0 auto;
+    width: 575px;
+    border-radius: 30px;
+    @include border-shadow;
+}
+
+.bar:hover {
+    @include box-shadow;
+}
+
+.bar:focus-within {
+    @include box-shadow;
+    @include focus-outline;
+}
+
+.searchbar {
+    height: 45px;
+    border: none;
+    width: 500px;
+    font-size: 16px;
+    @include focus-outline;
+}
+
+.voice {
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.button {
+    background-color: $gray3;
+    border: none;
+    color: $gray4;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    @include focus-outline;
+
+    &:hover {
+        @include border-shadow;
+        padding: 9px 19px;
+        color: #808080;
+    }
+
+    &:focus {
+        @include border-shadow;
+        padding: 9px 19px;
+    }
+}
