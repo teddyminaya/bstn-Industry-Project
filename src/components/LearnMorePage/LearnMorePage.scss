@@ -1,0 +1,12 @@
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+.learn-container {
+    width: 100vw;
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-color: $google-white;
+    // background-image: url('src/assets/images/AI_Overview.svg');
+}
