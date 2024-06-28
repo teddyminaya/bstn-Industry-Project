@@ -7,6 +7,11 @@
     box-shadow: 1px 1px 8px 1px $gray;
 }
 
+@mixin gemini-border-shadow {
+    border: 1px solid $gemini-purple;
+    box-shadow: 0 1px 1px $gemini-purple;
+}
+
 @mixin border-shadow {
     border: 1px solid $gray;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
@@ -50,7 +55,7 @@ li a {
 }
 
 .signbutton {
-    background-color: #0066ff;
+    background-color: $signin-blue;
     color: #fff;
     border: none;
     border-radius: 115px;
@@ -113,7 +118,6 @@ li a {
 
 .buttons {
     display: flex;
-    align-items: center;
     margin-top: 30px;
 }
 
@@ -137,6 +141,21 @@ li a {
     &:focus {
         @include border-shadow;
     }
+
+
+    &--gemini {
+        background-image: linear-gradient(to right, $gemini-blue, $gemini-purple, $gemini-pink);
+        color: white;
+        &:hover,
+        &:focus {
+            @include gemini-border-shadow;
+            color: white !important;
+        }
+
+        &__prompt {
+            color: $google-grey;
+        }
+    }
 }
 
 .search-container {
@@ -151,10 +170,8 @@ li a {
     display: flex;
 }
 
-
-
-.gemini-text {
-    background: -webkit-linear-gradient($gemini-blue, $gemini-purple, $gemini-pink);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.gemini-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
