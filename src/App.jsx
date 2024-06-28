@@ -5,7 +5,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <MainSearchPage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainSearchPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
