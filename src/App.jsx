@@ -1,15 +1,17 @@
 import React from "react";
 import MainSearchPage from "./components/MainSearchPage/MainSearchPage";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-
-
   return (
     <>
-      <MainSearchPage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainSearchPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
