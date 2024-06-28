@@ -4,7 +4,7 @@ import MainSearchPopover from "../MainSearchPopover/MainSearchPopover";
 
 const MainSearchPage = () => {
     return (
-        <div>
+        <main>
             <header>
                 <ul>
                     <li>
@@ -75,7 +75,7 @@ const MainSearchPage = () => {
                     </section>
                 </div>
             </section>
-        </div>
+        </main>
     );
 };
 
