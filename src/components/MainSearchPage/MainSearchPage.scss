@@ -9,6 +9,7 @@
 
 @mixin border-shadow {
     border: 1px solid $gray;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
 }
 
 @mixin focus-outline {
@@ -49,14 +50,14 @@ li a {
 }
 
 .signbutton {
-    background-color: #0066ff;
+    background-color: $blue;
     color: #fff;
     border: none;
-    border-radius: 115px;
-    padding: 7px 19px;
+    border-radius: 3px;
+    padding: 7px 10px;
     position: relative;
     bottom: 7px;
-    font-weight: none;
+    font-weight: bold;
 }
 
 .logo {
@@ -114,6 +115,7 @@ li a {
 }
 
 .button {
+    cursor: pointer;
     color: $google-grey;
     background-color: $gray3;
     border: none;
@@ -142,12 +144,6 @@ li a {
     justify-content: center;
     align-items: center;
 }
-
-.nav-container-left{
-    display: flex;
-}
-
-
 
 .gemini-text {
     background: -webkit-linear-gradient($gemini-blue, $gemini-purple, $gemini-pink);
