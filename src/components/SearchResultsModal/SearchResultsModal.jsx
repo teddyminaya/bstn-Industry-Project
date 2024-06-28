@@ -1,4 +1,4 @@
-
+import './SearchResultsModal.scss';
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -12,7 +12,8 @@ const style = {
     transform: 'translate(-50%, -50%)',
     width: 400,
     bgcolor: 'background.paper',
-    border: '2px solid #000',
+    border: '1px solid #3c4043',
+    borderRadius: '1rem',
     boxShadow: 24,
     p: 4,
 };
@@ -24,7 +25,7 @@ const SearchResultsModal = () => {
 
     return (
         <div>
-            <Button onClick={handleOpen}>Open modal</Button>
+            <Button onClick={handleOpen} className="learn-more-btn">Learn more</Button>
             <Modal
                 open={open}
                 onClose={handleClose}

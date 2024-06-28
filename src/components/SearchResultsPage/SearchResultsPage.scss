@@ -4,15 +4,13 @@
 @use "../../styles/partials/typography" as *;
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10rem;
-    width: 1rem;
+    // position: relative;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    width: 100vw;
+    height: 110vh;
+    background-repeat: no-repeat;
     background-color: $google-white;
-}
-
-.bg-image {
-    max-width: 100%;
-    max-height: 100%; 
+    background-image: url('src/assets/images/AI_Overview.svg');
 }
