@@ -4,9 +4,14 @@
 @use "../../styles/partials/typography" as *;
 
 .learn-container {
+    align-self: center;
     width: 100vw;
-    height: 110vh;
+    height: 120vh;
     background-repeat: no-repeat;
     background-color: $google-white;
-    // background-image: url('src/assets/images/AI_Overview.svg');
+    background-image: url('src/assets/images/Learn-More-Page.svg');
+}
+
+.hold {
+    color: rgba(60, 64, 67, 0);
 }
