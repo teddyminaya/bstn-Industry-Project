@@ -36,7 +36,9 @@ const MainSearchPopover = () => {
           }}
         >
           <Typography sx={{ background: "#F3EDF7", p: 2, fontSize: 13 }}>
-            The content of the Popover.
+            Gemini AI is an artificial intelligence system developed by Google.<br>
+            </br>Search with Gemini to get a relevant and summarized overview of your <br></br>
+            search results.
           </Typography>
         </Popover>
       </div>
