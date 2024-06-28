@@ -1,5 +1,6 @@
 import React from "react";
 import "./MainSearchPage.scss";
+import MainSearchPopover from "../MainSearchPopover/MainSearchPopover";
 
 const MainSearchPage = () => {
     return (
@@ -70,7 +71,7 @@ const MainSearchPage = () => {
                         <button className="button button--gemini" type="button">
                             Search with Gemini
                         </button>
-                        <p className="button--gemini__prompt">What is this?</p>
+                        <MainSearchPopover />
                     </section>
                 </div>
             </section>
