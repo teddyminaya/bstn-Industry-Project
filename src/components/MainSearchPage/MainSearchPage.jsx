@@ -3,7 +3,7 @@ import "./MainSearchPage.scss";
 
 const MainSearchPage = () => {
     return (
-        <div>
+        <main>
             <header>
                 <ul>
                     <li>
@@ -74,7 +74,7 @@ const MainSearchPage = () => {
                     </section>
                 </div>
             </section>
-        </div>
+        </main>
     );
 };
 

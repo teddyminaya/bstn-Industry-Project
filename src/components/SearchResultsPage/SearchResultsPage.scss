@@ -1,0 +1,18 @@
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 1rem;
+    background-color: $google-white;
+}
+
+.bg-image {
+    max-width: 100%;
+    max-height: 100%; 
+}
