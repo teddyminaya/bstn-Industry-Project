@@ -34,10 +34,10 @@ const SearchResultsModal = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        Text in a modal
+                        AI Overview
                     </Typography>
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                        AI Overviews in Google Search provide quick summaries of information from various sources, aimed at making it easier to understand topics quickly. It's important to note that this feature uses experimental AI technology, which Google continues to refine based on user feedback.
                     </Typography>
                 </Box>
             </Modal>
