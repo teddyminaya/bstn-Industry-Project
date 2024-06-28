@@ -49,14 +49,14 @@ li a {
 }
 
 .signbutton {
-    background-color: $blue;
+    background-color: #0066ff;
     color: #fff;
     border: none;
-    border-radius: 3px;
-    padding: 7px 10px;
+    border-radius: 115px;
+    padding: 7px 19px;
     position: relative;
     bottom: 7px;
-    font-weight: bold;
+    font-weight: none;
 }
 
 .logo {
@@ -142,6 +142,12 @@ li a {
     justify-content: center;
     align-items: center;
 }
+
+.nav-container-left{
+    display: flex;
+}
+
+
 
 .gemini-text {
     background: -webkit-linear-gradient($gemini-blue, $gemini-purple, $gemini-pink);

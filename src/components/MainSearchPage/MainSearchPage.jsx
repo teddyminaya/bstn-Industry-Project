@@ -28,6 +28,14 @@ const MainSearchPage = () => {
                     <li>
                         <a href="#gmail">Gmail</a>
                     </li>
+                    <div className="nav-container-left">
+                    <li>
+                        <a>About</a>
+                    </li>
+                    <li>
+                        <a>Store</a>
+                    </li>
+                    </div>
                 </ul>
             </header>
             <section className="search-container">
