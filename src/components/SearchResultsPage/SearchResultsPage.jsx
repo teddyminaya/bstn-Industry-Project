@@ -1,11 +1,12 @@
 
-import React from 'react';
+import "./SearchResultsPage.scss";
+import * as React from 'react';
 
 const SearchResultsPage = () => {
-        return (
-            <>
-            </>
-        )
+    return (
+        <>
+        </>
+    )
 };
 
 export default SearchResultsPage;
