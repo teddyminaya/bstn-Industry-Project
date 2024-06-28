@@ -66,9 +66,12 @@ const MainSearchPage = () => {
                     <button className="button" type="button">
                         I'm Feeling Lucky
                     </button>
-                    <button className="button" type="button">
-                        <p className='gemini-text'>Gemini</p>
-                    </button>
+                    <section className="gemini-btn-wrapper">
+                        <button className="button button--gemini" type="button">
+                            Search with Gemini
+                        </button>
+                        <p className="button--gemini__prompt">What is this?</p>
+                    </section>
                 </div>
             </section>
         </div>
