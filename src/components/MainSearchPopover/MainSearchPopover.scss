@@ -1,0 +1,12 @@
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+p {
+    color: $google-grey;
+}
+
+.popover__custom{
+    
+}

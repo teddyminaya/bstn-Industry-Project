@@ -1,0 +1,17 @@
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+.learn-container {
+    align-self: center;
+    width: 100vw;
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-color: $google-white;
+    background-image: url('src/assets/images/Learn-More-Page.svg');
+}
+
+.hold {
+    color: rgba(60, 64, 67, 0);
+}

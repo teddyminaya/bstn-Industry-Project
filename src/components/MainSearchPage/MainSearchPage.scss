@@ -1,0 +1,177 @@
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+@mixin box-shadow {
+    box-shadow: 1px 1px 8px 1px $gray;
+}
+
+@mixin gemini-border-shadow {
+    border: 1px solid $gemini-purple;
+    box-shadow: 0 1px 1px $gemini-purple;
+}
+
+@mixin border-shadow {
+    border: 1px solid $gray;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+@mixin focus-outline {
+    outline: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.grid {
+    height: 23px;
+    position: relative;
+    bottom: 4px;
+}
+
+.signbutton {
+    background-color: $signin-blue;
+    color: #fff;
+    border: none;
+    border-radius: 115px;
+    padding: 7px 19px;
+    position: relative;
+    bottom: 7px;
+    font-weight: none;
+}
+
+.logo {
+    margin-top: 200px;
+    margin-bottom: 20px;
+    &__wordmark {
+        width: 18rem;
+    }
+}
+
+.bar {
+    margin: 0 auto;
+    width: 575px;
+    border-radius: 30px;
+    @include border-shadow;
+
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.bar:hover {
+    @include box-shadow;
+}
+
+.bar:focus-within {
+    @include box-shadow;
+    @include focus-outline;
+}
+
+.searchbar {
+    height: 2.8rem !important;
+    border: none;
+    width: 500px;
+    font-size: 16px;
+    padding-left: 15px;
+    @include focus-outline;
+    &__cta {
+        height: 20px;
+        position: relative;
+    }
+}
+
+.lens {
+    height: 26px;
+}
+
+.voice {
+    margin-right: 20px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 30px;
+}
+
+.button {
+    color: $google-grey;
+    background-color: $gray3;
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    @include focus-outline;
+
+    &:hover {
+        @include border-shadow;
+        color: $button-grey;
+    }
+
+    &:focus {
+        @include border-shadow;
+    }
+
+
+    &--gemini {
+        background-image: linear-gradient(to right, $gemini-blue, $gemini-purple, $gemini-pink);
+        color: white;
+        &:hover,
+        &:focus {
+            @include gemini-border-shadow;
+            color: white !important;
+        }
+
+        &__prompt {
+            color: $google-grey;
+        }
+    }
+}
+
+.search-container {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container-left{
+    display: flex;
+}
+
+.gemini-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

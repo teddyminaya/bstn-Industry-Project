@@ -1,0 +1,16 @@
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+
+.learn-more-btn {
+    text-transform: none !important;
+    color: rgba(60, 64, 67, .01) !important;
+    font-family: "Google Sans Regular" !important;
+    line-height: 10px !important;
+    position: relative !important;
+    top: 142px !important;
+    left: 703px !important;
+    font-size: 10.3px !important;
+}
